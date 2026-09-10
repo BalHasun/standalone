@@ -1,0 +1,57 @@
+The Altenburg Foundation — inline CSS/JS cPanel export for /test2/
+HTML pages: 29
+Binary asset files: 54
+Local font files: 6
+
+AUTOMATED FINAL SEARCH
+file://: 0
+C:\\: 0
+C:/: 0
+Users/: 0
+localhost:4182: 0
+127.0.0.1: 0
+/@vite: 0
+vite/client: 0
+createHotContext: 0
+import.meta.hot: 0
+node_modules: 0
+/src/: 0
+href="/assets: 0
+src="/assets: 0
+stylesheet links: 0
+external script dependencies: 0
+React or Next runtime: 0
+Missing referenced assets: 0
+Broken internal links: 0
+Incorrect internal page links: 0
+Missing cross-page anchors: 0
+
+card-donation.html
+contact.html
+donate.html
+euro-donations.html
+fellow-audi-ahmed.html
+fellow-nada-alfarra.html
+fellow-nour-abuhassira.html
+fellow-tsabeh-higazy.html
+fellow-wisal-babiker.html
+fellowship-programme.html
+gbp-donations.html
+grant-project-aid-pioneers-collaboration.html
+grant-project-aleppo-school.html
+grant-project-alsama.html
+grant-project-animo-arta.html
+grant-project-coda.html
+grant-project-financial-literacy.html
+grant-project-hardship-loans.html
+grant-project-mayankho.html
+grant-project-p4t.html
+grant-project-performance-plus.html
+grant-project-tuyoor-al-amal.html
+grants-programme.html
+index.html
+mission.html
+programme.html
+select-donation.html
+updates.html
+usd-donations.html
