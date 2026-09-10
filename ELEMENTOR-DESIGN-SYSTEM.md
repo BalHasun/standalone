@@ -14,8 +14,8 @@ folder. Apply it in WordPress at **Elementor → hamburger menu → Site Setting
 | Primary          | `#082244` | Headings (h1–h4), header/footer background           |
 | Secondary        | `#17385e` | **Body text** — the dark-blue body colour            |
 | Text             | `#4a6483` | Meta text, captions, small labels                    |
-| Accent           | `#17658f` | Links, text-link hover, Grants accents, blue buttons |
-| Fellowship       | `#237b6d` | Fellowship section labels and buttons                |
+| Accent           | `#237b6d` | Links, text-link hover, Grants accents, blue buttons |
+| Fellowship       | `#17658f` | Fellowship section labels and buttons                |
 | Fellowship light | `#57bda9` | Fellowship rules, light accents                      |
 | Grants light     | `#51ade5` | Grants light accents                                 |
 | Background       | `#fbfaf6` | Page background (paper)                              |
