@@ -200,9 +200,14 @@ It returns an empty array on all 28 static pages today.
 
 ## 5. Editorial rules applied to content
 
-- **Capitalisation:** sentence case for every heading. Proper nouns keep their
-  capitals — _Fellowship Programme_, _Grants Programme_, _Gift Aid_, place
-  names, people's names.
+- **Capitalisation:** sentence case for every heading, label, link and button.
+  Only true proper nouns keep their capitals — organisation names (_The
+  Altenburg Foundation_, _Tim Henman Foundation_), project names (_The Alsama
+  Project_, _Tuyoor Al-Amal_), _Gift Aid_, place names, people's names,
+  universities and degree titles. Generic nouns are lowercase even when they
+  name a part of the site: _Contact the foundation_, _Grants programme_,
+  _Fellowship programme_, _What we do_, _Get in touch_. _Fellow_ / _Fellows_
+  keeps its capital as the programme's title for a person.
 - **Full stops:** no heading ends in a full stop. A full stop _inside_ a heading
   that separates two sentences stays (e.g. _Supporting potential. Strengthening
   community impact_).
