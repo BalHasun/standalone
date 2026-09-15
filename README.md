@@ -1,44 +1,38 @@
-# Readable source
+# The Altenburg Foundation — static site
 
-A restructured copy of the 29 pages in the folder above. Same site, same
-rendering — the markup is just legible now.
+29 plain HTML pages. No build step: open `index.html` in a browser and it works.
 
 ## Layout
 
-    src/
-      *.html          29 pages, indented, one element per line
-      css/site.css    every style rule, shared by all pages
-      js/site.js      the image-carousel behaviour, shared by all pages
-
-Images and fonts still live in `../assets/`; nothing there was touched.
-
-## What changed
-
-| | before | after |
-|---|---|---|
-| total size | 4.97 MB | 0.46 MB |
-| a page, e.g. `index.html` | 171 KB, 2 real lines | 11 KB, 194 lines |
-| stylesheet | 157 KB inlined into every page | one 108 KB file |
-| script | inlined into every page | one file |
-| class names | `_founderStorySection_1x577_160` | `founder-story-section` |
-
-Three things were removed or merged:
-
-- **The duplicated stylesheet.** All 29 copies were byte-identical.
-- **Dead rules.** 213 of the 450 classes in the stylesheet belonged to an
-  earlier design and no page used them. After removing them, every class that
-  a page uses has a rule, and every rule is used.
-- **Two spellings of the same script.** The only difference was indentation.
-
-Two components both de-hashed to `fellow-metadata`, so they were named for
-their role instead: `fellow-profile-meta` (individual fellow pages) and
-`fellow-card-meta` (the listing cards on `fellowship-programme.html`).
-
-## Editing
+    index.html, mission.html, …   the 29 pages
+    css/site.css                  every style rule, shared by all pages
+    js/site.js                    the image-carousel behaviour, shared by all pages
+    assets/                       images and fonts
 
 Edit `css/site.css` once and all 29 pages change — that is the point of the
-split. The pages themselves are plain HTML with no build step: open one in a
-browser and it works.
+split. Class names say what they are: `founder-story-section`, `value-icon`,
+`pathway-grid`.
+
+## History
+
+These pages were exported with the stylesheet and script inlined into every
+one of them — 4.97 MB total, each page a single unreadable line. Restructuring
+brought that to 0.45 MB by removing three kinds of duplication:
+
+- **The repeated stylesheet.** All 29 copies were byte-identical.
+- **Dead rules.** 213 of the 450 classes belonged to an earlier design and no
+  page used them. Every class a page uses now has a rule, and every rule is
+  used.
+- **Two spellings of the same script**, differing only in indentation.
+
+Class names were unminified at the same time (`_founderStorySection_1x577_160`
+→ `founder-story-section`). Two components both de-hashed to `fellow-metadata`,
+so they were named for their role instead: `fellow-profile-meta` (individual
+fellow pages) and `fellow-card-meta` (the listing cards on
+`fellowship-programme.html`).
+
+The restructure was verified page by page: identical DOM trees, equivalent CSS
+rules, and pixel-identical renders at desktop and phone widths.
 
 ## Known issue, inherited
 
