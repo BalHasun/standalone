@@ -4578,9 +4578,11 @@ h4 {
 
 .gallery-slide img {
   aspect-ratio: 16/10;
-  object-fit: contain;
+  object-fit: cover;
   background: #dbe3e6;
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .gallery-slide figcaption {
@@ -4813,7 +4815,7 @@ h4 {
   }
 
   .gallery-slide img {
-    aspect-ratio: 4/3;
+    aspect-ratio: 16/10;
   }
 
   .gallery-slide figcaption {
@@ -5353,9 +5355,11 @@ h4 {
 
 .gallery-slide img {
   aspect-ratio: 16/10;
-  object-fit: contain;
+  object-fit: cover;
   background: #dbe3e6;
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .gallery-slide figcaption {
@@ -5588,7 +5592,7 @@ h4 {
   }
 
   .gallery-slide img {
-    aspect-ratio: 4/3;
+    aspect-ratio: 16/10;
   }
 
   .gallery-slide figcaption {
