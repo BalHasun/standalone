@@ -563,7 +563,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-sans);
   margin: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   font-weight: 500;
   line-height: 1.65;
 }
@@ -636,7 +636,7 @@ h4 {
 @media (max-width:760px) {
 
   body {
-    font-size: var(--fs-3);
+    font-size: var(--fs-4);
     line-height: 1.6;
   }
 }
@@ -1134,7 +1134,7 @@ h4 {
   max-width: 540px;
   color: var(--body);
   margin-bottom: 2rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.75;
 }
 
@@ -1249,7 +1249,7 @@ h4 {
   max-width: 650px;
   color: var(--body);
   margin: 0 auto;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.75;
 }
 
@@ -1307,7 +1307,7 @@ h4 {
   max-width: 330px;
   color: var(--body);
   margin: 0 auto;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.7;
 }
 
@@ -1354,7 +1354,7 @@ h4 {
   max-width: 540px;
   color: var(--body);
   margin-bottom: 2rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.75;
 }
 
@@ -1443,7 +1443,7 @@ h4 {
   color: var(--body);
   text-align: center;
   margin: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.8;
 }
 
@@ -1481,7 +1481,7 @@ h4 {
 .where-heading>p {
   color: var(--body);
   margin-bottom: .35rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.75;
 }
 
@@ -1535,7 +1535,7 @@ h4 {
   color: var(--body);
   max-width: 590px;
   margin: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.78;
 }
 
@@ -1664,7 +1664,7 @@ h4 {
 .action-editorial-columns p {
   text-align: center;
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.8;
 }
 
@@ -1699,7 +1699,7 @@ h4 {
   max-width: 460px;
   color: var(--body);
   margin-bottom: .35rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.75;
 }
 
@@ -1734,7 +1734,7 @@ h4 {
   max-width: 680px;
   color: var(--body);
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -1786,7 +1786,7 @@ h4 {
   max-width: 350px;
   color: var(--body);
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -1812,7 +1812,7 @@ h4 {
 .action-closing p:not(.section-label) {
   max-width: 620px;
   margin-bottom: 2rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.7;
 }
 
@@ -1854,7 +1854,7 @@ h4 {
   max-width: 650px;
   color: var(--body);
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -1894,7 +1894,7 @@ h4 {
   max-width: 500px;
   color: var(--body);
   margin-bottom: 2rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -2048,7 +2048,7 @@ h4 {
   max-width: 650px;
   color: var(--body);
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.7;
 }
 
@@ -2385,7 +2385,7 @@ h4 {
   }
 
   .hero-copy>p:not(.kicker) {
-    font-size: var(--fs-3);
+    font-size: var(--fs-4);
   }
 
   .hero-actions {
@@ -2757,7 +2757,7 @@ h4 {
 
 .fellowship-hero .programme-hero-inner>p:not(.kicker):not(.fellowship-hero-support) {
   max-width: 730px;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
 }
 
 .grants-hero:after {
@@ -2869,7 +2869,7 @@ h4 {
   max-width: 570px;
   color: var(--body);
   margin-bottom: 2rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.75;
 }
 
@@ -2938,7 +2938,7 @@ h4 {
   max-width: 660px;
   color: var(--body);
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -2982,7 +2982,7 @@ h4 {
 .pillars-grid p {
   color: var(--body);
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.7;
 }
 
@@ -3206,7 +3206,7 @@ h4 {
 .fellowship-support-copy>p:not(.section-label) {
   max-width: 590px;
   margin: 1.6rem 0 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -3337,7 +3337,7 @@ h4 {
 .eligibility-grid p {
   color: var(--body);
   margin-bottom: 0;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.7;
 }
 
@@ -3444,7 +3444,7 @@ h4 {
 .redesign-project-copy>p:not(.project-location) {
   color: var(--body);
   margin-bottom: 1.8rem;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.7;
 }
 
@@ -3478,7 +3478,7 @@ h4 {
 .grants-closing>.container>p:not(.section-label) {
   max-width: 610px;
   margin-bottom: 2rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.7;
 }
 
@@ -3561,7 +3561,7 @@ h4 {
   color: var(--body);
   margin: 0;
   padding: 1.15rem 1rem 1.35rem;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.6;
 }
 
@@ -3589,7 +3589,7 @@ h4 {
   max-width: 470px;
   color: var(--body);
   margin-bottom: .35rem;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -4353,7 +4353,7 @@ h4 {
 
 .initiative-principles p {
   margin: 0;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -4401,7 +4401,7 @@ h4 {
 .cta-grid>div:first-child>p:last-child {
   max-width: 610px;
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -4545,7 +4545,7 @@ h4 {
 .support-grid p {
   color: var(--body);
   margin: 0;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -5128,7 +5128,7 @@ h4 {
 
 .initiative-principles p {
   margin: 0;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -5176,7 +5176,7 @@ h4 {
 .cta-grid>div:first-child>p:last-child {
   max-width: 610px;
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -5320,7 +5320,7 @@ h4 {
 .support-grid p {
   color: var(--body);
   margin: 0;
-  font-size: var(--fs-2);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
@@ -5696,7 +5696,7 @@ h4 {
 
 .option-body {
   color: var(--body);
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.78;
 }
 
@@ -5770,7 +5770,7 @@ h4 {
 
 .card-intro p {
   margin-bottom: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.75;
 }
 
@@ -5949,7 +5949,7 @@ body {
 .founder-story-pillars>article>p {
   color: var(--line);
   margin: 0;
-  font-size: var(--fs-3);
+  font-size: var(--fs-4);
   line-height: 1.72;
 }
 
