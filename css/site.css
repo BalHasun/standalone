@@ -564,8 +564,8 @@ body {
   font-family: var(--font-sans);
   margin: 0;
   font-size: var(--fs-4);
-  font-weight: 500;
-  line-height: 1.65;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 img {
@@ -615,12 +615,15 @@ h4 {
 
 h1 {
   font-size: var(--fs-8);
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.03em;
 }
 
 h2 {
   font-size: var(--fs-7);
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: normal;
 }
 
 h3 {
@@ -633,11 +636,25 @@ h4 {
   font-weight: 600;
 }
 
+@media (max-width:1024px) {
+
+  h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width:767px) {
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
 @media (max-width:760px) {
 
   body {
     font-size: var(--fs-4);
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
 
@@ -727,6 +744,14 @@ h4 {
   color: var(--ink);
   letter-spacing: -.035em;
   font-family: Fraunces,Georgia,serif;
+}
+
+.preview-root h1 {
+  letter-spacing: -.03em;
+}
+
+.preview-root h2 {
+  letter-spacing: normal;
 }
 
 .preview-root a {
