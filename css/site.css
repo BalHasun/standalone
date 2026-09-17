@@ -5910,3 +5910,187 @@ body {
   display: block;
 }
 
+
+/* ==========================================================================
+   Grants programme — landing page and project pages
+   Scoped to .page-grants (both) / .page-grant-detail (project pages only) so
+   the Fellowship pages, which share .editorial-split and .prose-stack, are
+   left untouched.
+   ========================================================================== */
+
+/* Sticky navigation ------------------------------------------------------ */
+
+/* .preview-root sets overflow:hidden, which makes it a scroll container and
+   stops position:sticky working for anything inside it. overflow-x:clip keeps
+   the horizontal-overflow guard without creating that scroll container. */
+.page-grants {
+  overflow: visible;
+  overflow-x: clip;
+}
+
+.page-grants .site-header {
+  position: sticky;
+  top: 0;
+}
+
+.page-grants .detail-nav,
+.page-grants .redesign-section-nav {
+  z-index: 40;
+  background: var(--paper);
+  border-top: 1px solid #d2d7d2;
+  border-bottom: 1px solid #d2d7d2;
+  display: block;
+  position: sticky;
+  top: 94px;
+}
+
+/* Anchor targets clear the sticky header + section nav. */
+.page-grants main section[id] {
+  scroll-margin-top: 170px;
+}
+
+/* Titles — one style everywhere: Fraunces, --fs-7, weight 500 ------------- */
+
+.page-grant-detail .grant-hero-inner h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-8);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+
+.page-grant-detail .editorial-split h2,
+.page-grant-detail .section-heading h2,
+.page-grant-detail .initiative-intro h2,
+.page-grant-detail .cta-grid h2,
+.page-grant-detail .partner-grid h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-7);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: normal;
+}
+
+.page-grant-detail .editorial-split h2,
+.page-grant-detail .section-heading h2 {
+  color: var(--ink);
+}
+
+.page-grant-detail .partner-grid h2 {
+  max-width: 640px;
+}
+
+.page-grant-detail .cta-grid h2 {
+  max-width: 640px;
+}
+
+/* Body copy — 1.25rem throughout ----------------------------------------- */
+
+.page-grant-detail .prose-stack p,
+.page-grant-detail .prose-stack p:first-child,
+.page-grant-detail .grant-hero-inner>p:last-child,
+.page-grant-detail .cta-grid>div:first-child>p:last-child,
+.page-grant-detail .partner-grid>div:last-child>p,
+.page-grant-detail .initiative-intro>div:first-child>p:last-child,
+.page-grant-detail .initiative-principles p,
+.page-grant-detail .support-grid p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+/* Photo gallery ---------------------------------------------------------- */
+
+.page-grant-detail .gallery-carousel {
+  background: var(--color-surface);
+  border: 1px solid #bcc7cc;
+}
+
+/* Equal-height slides: the image is a fixed height so every frame lines up,
+   and the caption is pinned to the bottom whatever its length. */
+.page-grant-detail .gallery-slide {
+  flex-direction: column;
+  min-width: 100%;
+  display: flex;
+}
+
+.page-grant-detail .gallery-slide img {
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: clamp(300px, 38vw, 520px);
+  flex: none;
+}
+
+.page-grant-detail .gallery-slide figcaption {
+  color: var(--body);
+  background: var(--color-surface);
+  border-top: 1px solid #dbe3e6;
+  flex: 1;
+  align-items: baseline;
+  gap: 1rem;
+  min-height: 72px;
+  padding: 1.1rem clamp(1.2rem, 2vw, 2rem);
+  font-size: var(--fs-3);
+  line-height: 1.6;
+  display: flex;
+}
+
+.page-grant-detail .gallery-slide figcaption span {
+  color: var(--blue-dark);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  flex: none;
+  font-size: var(--fs-1);
+  font-weight: 800;
+}
+
+/* Controls sit in one right-aligned cluster on the caption's padding line. */
+.page-grant-detail .gallery-controls {
+  border-top: 1px solid #dbe3e6;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .75rem;
+  min-height: 64px;
+  padding-inline: clamp(1.2rem, 2vw, 2rem);
+  display: flex;
+}
+
+/* Counter sits on the caption's left padding line, arrows cluster right. */
+.page-grant-detail .gallery-controls>span {
+  order: -1;
+  justify-self: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 760px) {
+
+  .page-grants .detail-nav,
+  .page-grants .redesign-section-nav {
+    top: 78px;
+  }
+
+  .page-grants main section[id] {
+    scroll-margin-top: 140px;
+  }
+
+  .page-grant-detail .prose-stack p,
+  .page-grant-detail .prose-stack p:first-child,
+  .page-grant-detail .grant-hero-inner>p:last-child,
+  .page-grant-detail .cta-grid>div:first-child>p:last-child,
+  .page-grant-detail .partner-grid>div:last-child>p,
+  .page-grant-detail .initiative-intro>div:first-child>p:last-child,
+  .page-grant-detail .initiative-principles p,
+  .page-grant-detail .support-grid p {
+    font-size: 1.125rem;
+  }
+
+  .page-grant-detail .gallery-slide img {
+    height: clamp(220px, 56vw, 320px);
+  }
+
+  .page-grant-detail .gallery-slide figcaption {
+    flex-direction: column;
+    gap: .4rem;
+  }
+}
