@@ -6094,3 +6094,185 @@ body {
     gap: .4rem;
   }
 }
+
+/* =========================================================================
+   Fellowship programme landing — tighter vertical rhythm + fellow carousel.
+   Appended on purpose: the grant/fellow rules earlier in this file exist in
+   two near-identical copies, so edits made in place there are overridden.
+   ========================================================================= */
+
+/* --- Tighter spacing ---------------------------------------------------- */
+
+.page-fellowship {
+  --section: clamp(2.6rem,3.8vw,4.1rem);
+}
+
+.page-fellowship .programme-hero {
+  min-height: 460px;
+}
+
+.page-fellowship .programme-hero-inner {
+  padding: clamp(3.2rem,5vw,4.6rem) 0 clamp(2.6rem,4vw,3.6rem);
+}
+
+.page-fellowship .programme-hero-inner .hero-actions {
+  margin-top: 1.5rem;
+}
+
+.page-fellowship .redesign-section-heading {
+  margin-bottom: clamp(1.8rem,2.6vw,2.6rem);
+}
+
+.page-fellowship .redesign-section-heading h2 {
+  margin: .65rem 0 .75rem;
+}
+
+.page-fellowship .editorial-split-heading h2,
+.page-fellowship .who-fellows-grid h2 {
+  margin-top: .7rem;
+}
+
+.page-fellowship .editorial-split-heading,
+.page-fellowship .who-fellows-grid,
+.page-fellowship .fellowship-support-grid {
+  gap: clamp(2rem,4.5vw,4.5rem);
+}
+
+.page-fellowship .editorial-prose p {
+  margin-bottom: .85rem;
+  line-height: 1.66;
+}
+
+.page-fellowship .pillars-grid article,
+.page-fellowship .eligibility-grid article {
+  min-height: 0;
+  padding: clamp(1.5rem,2.2vw,2.1rem);
+}
+
+.page-fellowship .pillars-grid article>span,
+.page-fellowship .eligibility-grid article>span {
+  margin-bottom: 1.1rem;
+}
+
+.page-fellowship .support-pathways li {
+  min-height: 0;
+  padding: .7rem 1.1rem;
+}
+
+.page-fellowship .apply-panel {
+  gap: 2rem;
+  margin-top: clamp(1.8rem,3vw,2.8rem);
+  padding: clamp(1.8rem,3vw,2.8rem);
+}
+
+.page-fellowship .fellows-archive-cta {
+  margin-top: clamp(1.6rem,2.4vw,2.2rem);
+}
+
+/* --- Fellows carousel --------------------------------------------------- */
+
+.fellows-carousel {
+  --fellows-per-view: 4;
+  --fellows-gap: clamp(18px,1.6vw,24px);
+  position: relative;
+}
+
+.fellows-viewport {
+  touch-action: pan-y;
+  overflow: hidden;
+}
+
+.fellows-track {
+  gap: var(--fellows-gap);
+  transition: transform .5s cubic-bezier(.4,0,.2,1);
+  display: flex;
+}
+
+.fellows-track>.redesign-fellow-card {
+  flex: 0 0 calc((100% - (var(--fellows-per-view) - 1)*var(--fellows-gap))/var(--fellows-per-view));
+  min-width: 0;
+}
+
+.fellows-controls {
+  align-items: center;
+  gap: 1rem;
+  margin-top: clamp(1.2rem,2vw,1.8rem);
+  display: flex;
+}
+
+.fellows-arrow {
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  background: 0 0;
+  border: 1px solid #aebdb5;
+  flex: none;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  font-size: var(--fs-4);
+  display: grid;
+}
+
+:is(.fellows-arrow:hover,.fellows-arrow:focus-visible) {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  color: #fff;
+}
+
+.fellows-dots {
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.fellows-dots button {
+  cursor: pointer;
+  background: #c3ccc6;
+  border: 0;
+  border-radius: 999px;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  transition: background .25s,width .25s;
+}
+
+.fellows-dots button[aria-current="true"] {
+  background: var(--green-dark);
+  width: 26px;
+}
+
+.fellows-status {
+  clip-path: inset(50%);
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+@media (max-width:1080px) {
+  .fellows-carousel {
+    --fellows-per-view: 3;
+  }
+}
+
+@media (max-width:900px) {
+  .fellows-carousel {
+    --fellows-per-view: 2;
+  }
+}
+
+@media (max-width:760px) {
+  .fellows-carousel {
+    --fellows-per-view: 1;
+  }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .fellows-track {
+    transition: none;
+  }
+}
